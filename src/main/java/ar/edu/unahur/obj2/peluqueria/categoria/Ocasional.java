@@ -1,6 +1,6 @@
-package ar.edu.unahur.obj2.peluqueria.categorias;
+package ar.edu.unahur.obj2.peluqueria.categoria;
 
-import ar.edu.unahur.obj2.peluqueria.servicios.Servicio;
+import ar.edu.unahur.obj2.peluqueria.servicio.Servicio;
 
 public class Ocasional implements Categoria {
     

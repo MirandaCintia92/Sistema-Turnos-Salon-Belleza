@@ -12,7 +12,7 @@ public  class ConfiguracionPeluqueria {
     }
     
 
-public  ConfiguracionPeluqueria getInstancia(){
+public static ConfiguracionPeluqueria getInstancia(){
 
 
     if (instancia ==  null) {
@@ -22,19 +22,19 @@ public  ConfiguracionPeluqueria getInstancia(){
 
 }
 
-public Double getRecargoInsumos(){
-    return recargoInsumos;
+public Double getRecargoConInsumos(){
+    return recargoConInsumos;
 }
 
 
-public void setRecargoInsumos(Double recargoInsumos){
-    if (esRecargoInvalido(recargoInsumos)){
+public void setRecargoConInsumos(Double recargoConInsumos){
+    if (esRecargoInvalido(recargoConInsumos)){
         throw new PrecioNegativoException("el recargo no puede ser negativo");
     }
-    this.recargoInsumos = recargoInsumos;
+    this.recargoConInsumos = recargoConInsumos;
 }
 private Boolean esRecargoInvalido(Double recargo){
-    return  recargo < 0;
+    return recargo == null || recargo < 0;
 }
 
 public Integer getContadorTurnosInteger(){
@@ -49,7 +49,7 @@ public Integer darSiguienteTurno(){
 
 public void reiniciar(){
     this.contadorTurnos = 0;
-    this.recargoInsumos = 0.0;
+    this.recargoConInsumos = 0.0;
 }
 
 }

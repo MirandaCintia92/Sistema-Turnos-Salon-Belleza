@@ -1,4 +1,4 @@
-package ar.edu.unahur.obj2.peluqueria.servicios;
+package ar.edu.unahur.obj2.peluqueria.servicio;
 
 public class CorteDeCabello extends Servicio{
     public CorteDeCabello(Double precioBase, Integer cuposDisponibles){
