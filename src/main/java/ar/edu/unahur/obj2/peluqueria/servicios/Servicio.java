@@ -43,4 +43,9 @@ private Integer esPrecioInvalido(Double precio){
     return precio < 0.0;
     }
 
+protected String generarComprobante(Integer nroTurno) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'generarComprobante'");
+}
+
 }
